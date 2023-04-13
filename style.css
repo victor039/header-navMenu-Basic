@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header{
+    width:80%;
+    height:760px;
+    margin:auto;
+    background-image: url(/img/comic.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+.header .menu{
+    width:100%;
+    height: 60px;
+    background-color: #444;
+    display:inline-block;
+}
+.header .menu .logo{
+  width:100%;
+  height:100%;
+  text-align: center;
+  color:#fff;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 5px;
+}
+
+.header .menu ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    width:80%;
+    height:100%;
+    margin:auto;
+}
+.header .menu ul li{
+   margin:0 25px;
+   transition:300ms;
+}
+
+.header .menu ul li a{
+  color:#fff;
+  text-decoration: none;
+  font-size:17px;
+  letter-spacing: 2px;
+  transition:300ms;
+}
+.header .menu ul li a:hover{
+ color:orange;
+}
+
+@media screen and (max-width: 767px) {
+    .header .menu  {
+       
+        height: auto;
+      }
+    .header .menu ul {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+     
+    }
+    .header .menu ul li {
+      margin: 10px 0;
+      
+    }
+  }
+  
